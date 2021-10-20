@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lista3.js"></script>
+    <title>Document</title>
+    <style>
+        body, html{
+            background-color: black;
+            height: 120%;
+            margin: 0;
+            padding: 0;
+        }
+        #topo {
+        
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        #linha{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        #btn{
+            width: 230px;
+            background-color: black;
+            color: gray;
+            border: none;
+            border-radius: 20px;
+            padding: 40px;
+            cursor: pointer;
+        }
+        #btntopo{
+            background-color: black;
+            color: gray;
+            border: none;
+            border-radius: 20px;
+            padding: 40px;
+            cursor: pointer;
+        }
+        #btn:hover ,#btntopo:hover{
+            color:black;
+            background-color: transparent;
+        }
+        .conteudo{
+            height: 60px;
+            width: 100%;
+            background-color: white;
+        }
+        #imc{
+            height: 100%;
+            background-color: wheat;
+        }
+        .imc1{
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        .imc2{
+            box-sizing: border-box;
+            background-color: white;
+            width: 480px;
+            border-radius: 20px;
+            padding: 20px ;
+        }
+
+        #data{
+            height: 100%;
+            background-color: rgb(86, 228, 86);
+        }
+        .btng{
+            margin-top: 15px;
+            border: none;
+            background-color: rgb(138, 6, 6);
+            border-radius: 20px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .btng:hover{
+            padding: 6px;
+            
+        }
+
+        .conteudo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+        MUDANÇA DE COR
+    </div>
+    <div id="topo">
+    <div>
+    <div id="linha">
+        <button id="btntopo" type="button" onclick="mudar1()">red</button>
+        <button id="btntopo" type="button" onclick="mudar2()">green</button>
+    </div>
+    <div id="linha">
+        <button id="btntopo" type="button" onclick="mudar3()">blue</button>
+        <button id="btntopo" type="button" onclick="mudar4()">yellow</button>
+    </div>
+        <button id="btn" id="btntopo" type="button" onclick="voltar()">back</button>
+    </div>
+    </div>
+
+    <div class="conteudo">
+        CALCULO IMC
+    </div>
+
+    <div id="imc">
+
+        <div class="imc1">
+            <div class="imc2">
+                    <label>Altura</label>
+                    <input type="text" id="altura" name="altura">
+                    <label>Peso</label>
+                    <input type="text" id="peso" name="peso">
+                    <button class="btng" onclick="resposta()">Enviar</button>
+                    <p id="resp">...</p>
+              
+            </div>
+        </div>
+        <div class="conteudo">
+            DATA DE ANIVERSÁRIO
+        </div>
+
+        <div id="data">
+            
+            <div class="imc1">
+                <div class="imc2">
+                    <label>Escreva o seu ano de Nascimento: </label>
+                    <input type="text" id="dat" name="dat">
+                    <button  class="btng" onclick="respostadata()">Enviar</button>
+                    <br>
+                    <p id="respdata">Sua idade:</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
